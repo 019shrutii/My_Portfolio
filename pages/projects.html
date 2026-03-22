@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shruti | Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: { 400: '#a67b5b', 500: '#8B4513', 600: '#6f4e37' },
+                        beige: { 100: '#fdfcf0', 200: '#f5f5dc', 300: '#e8e4c9' },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Shruti <span>Kumari</span></a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="certificates.html">Certifications</a>
+            <a href="extra-curricular.html">Activities</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <button id="themeToggle" class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="pb-20 pt-32">
+        <h2 class="section-title reveal text-center mb-16">My <span>Projects</span></h2>
+
+        <div style="margin-bottom: 40px; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+            <button class="btn primary filter-btn" data-filter="all">All Projects</button>
+            <button class="btn secondary filter-btn" data-filter="data-science">Data Science</button>
+        </div>
+
+        <div class="projects-container">
+            <!-- Data Science Projects -->
+            <div class="card data-science reveal project-card">
+                <h3><i class="fa-solid fa-chart-line"></i> Air Quality Analysis</h3>
+                <p>Interactive Power BI dashboard analyzing AQI & pollution trends with dynamic charts and KPI cards.</p>
+                <div class="project-tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">Analysis</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/posts/shruti-kumari-6213bb299_powerbi-dataanalytics-businessintelligence-activity-7408092930348978176-pa5q?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgj_LkBiToePApsAicWkaPRVZB41Lujhrk" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+                </div>
+            </div>
+
+            <div class="card data-science reveal project-card">
+                <h3><i class="fa-solid fa-shield-halved"></i> Violence Reduction</h3>
+                <p>Analyzed crime demographics and transformed raw data into actionable insights for policymakers using advanced Excel techniques.</p>
+                <div class="project-tags">
+                    <span class="tag">Excel</span>
+                    <span class="tag">Analysis</span>
+                    <span class="tag">Visualization</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/posts/shruti-kumari-6213bb299_dataanalytics-exceldashboard-datavisualization-activity-7316747184983420929-e7I4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgj_LkBiToePApsAicWkaPRVZB41Lujhrk" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+                </div>
+            </div>
+
+            <div class="card data-science reveal project-card">
+                <h3><i class="fa-solid fa-arrow-trend-up"></i> Stock Trend AI</h3>
+                <p>Applied preprocessing and regression models to deliver stock trend predictions with visual insights using Python and ML libraries.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">ML</span>
+                    <span class="tag">Forecasting</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/posts/shruti-kumari-6213bb299_machinelearning-stockmarket-financialforecasting-activity-7316790824367755264-dlMM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgj_LkBiToePApsAicWkaPRVZB41Lujhrk" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+                </div>
+            </div>
+
+
+            <!-- MERN Stack -->
+            <div class="card other reveal project-card">
+                <h3><i class="fa-solid fa-user-graduate"></i> Student Management</h3>
+                <p>Comprehensive Student Management System built with Java Swing and MySQL, featuring a desktop UI and robust database management.</p>
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Swing</span>
+                    <span class="tag">MySQL</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/posts/shruti-kumari-6213bb299_java-swing-collegeproject-activity-7351163699891425282-QLRD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgj_LkBiToePApsAicWkaPRVZB41Lujhrk" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+                </div>
+            </div>
+
+            <!-- MERN Stack -->
+            <div class="card other reveal project-card">
+                <h3><i class="fa-solid fa-wallet"></i> Expense Tracker</h3>
+                <p>Full-stack MERN project tracking expenses with secure authentication and real-time updates.</p>
+                <div class="project-tags">
+                    <span class="tag">MERN</span>
+                    <span class="tag">Auth</span>
+                    <span class="tag">Real-time</span>
+                </div>
+                <div style="margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                    <a href="https://vercel.com/shruti-kumaris-projects-d0cf006f/spendwisefrontend" class="btn primary" style="padding: 8px 10px; font-size: 0.78rem; text-align:center;" target="_blank"><i class="fa-solid fa-globe"></i> Frontend Demo</a>
+                    <a href="https://dashboard.render.com/web/srv-d6fls28gjchc73bsq7vg" class="btn primary" style="padding: 8px 10px; font-size: 0.78rem; text-align:center;" target="_blank"><i class="fa-solid fa-server"></i> Backend Demo</a>
+                    <a href="https://github.com/019shrutii/Spendwise-frontend" class="btn secondary" style="padding: 8px 10px; font-size: 0.78rem; text-align:center;" target="_blank"><i class="fa-brands fa-github"></i> Frontend</a>
+                    <a href="https://github.com/019shrutii/Spendwise-backend" class="btn secondary" style="padding: 8px 10px; font-size: 0.78rem; text-align:center;" target="_blank"><i class="fa-brands fa-github"></i> Backend</a>
+                </div>
+            </div>
+
+            <div class="card other reveal project-card">
+                <h3><i class="fa-regular fa-comments"></i> Real-time Chat</h3>
+                <p>WebSocket integration enabling low-latency communication with scalable server architecture.</p>
+                <div class="project-tags">
+                    <span class="tag">Socket.io</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Scalable</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://dashboard.render.com/web/srv-d6g2he3h46gs738n68d0" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-solid fa-globe"></i> Live Demo</a>
+                    <a href="https://github.com/019shrutii/ChatBot" class="btn secondary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="card other reveal project-card">
+                <h3><i class="fa-brands fa-youtube"></i> YouTube Clone</h3>
+                <p>Interactive frontend recreating YouTube UI with responsive design and dynamic rendering.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">UI/UX</span>
+                    <span class="tag">Responsive</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://vercel.com/shruti-kumaris-projects-d0cf006f/youtube-clone-react" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-solid fa-globe"></i> Live Demo</a>
+                    <a href="https://github.com/019shrutii/Youtube_clone" class="btn secondary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Shruti | Portfolio. Designed for the Future.</p>
+    </footer>
+
+    <!-- FEATURES SCRIPTS -->
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../main.js"></script>
+</body>
+
+</html>

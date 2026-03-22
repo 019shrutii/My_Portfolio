@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shruti | Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: { 400: '#a67b5b', 500: '#8B4513', 600: '#6f4e37' },
+                        beige: { 100: '#fdfcf0', 200: '#f5f5dc', 300: '#e8e4c9' },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .form-input {
+            width: 100%;
+            background: var(--form-bg);
+            border: 1px solid var(--form-border);
+            border-radius: 12px;
+            padding: 14px 18px;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            outline: none;
+            font-family: inherit;
+        }
+        .form-input:focus {
+            border-color: var(--primary);
+            background: var(--primary-glow);
+            box-shadow: 0 0 0 3px var(--primary-glow);
+        }
+        .form-input::placeholder { color: var(--text-muted); }
+        .form-label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #8B4513, #a67b5b);
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            letter-spacing: 0.05em;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(139,69,19,0.35);
+        }
+        .submit-btn:active { transform: translateY(0); }
+        #formSuccess {
+            display: none;
+            padding: 16px;
+            background: rgba(166,123,91,0.1);
+            border: 1px solid rgba(166,123,91,0.3);
+            border-radius: 12px;
+            color: #a67b5b;
+            text-align: center;
+            font-weight: 500;
+        }
+        .availability-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #22c55e;
+            animation: pulse-green 2s infinite;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        @keyframes pulse-green {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
+            50% { box-shadow: 0 0 0 6px rgba(34,197,94,0); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Shruti <span>Kumari</span></a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificates.html">Certifications</a>
+            <a href="extra-curricular.html">Activities</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html" class="active">Contact</a>
+            <button id="themeToggle" class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- CONTACT -->
+    <section id="contact" class="pb-24 pt-32">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Header -->
+            <div class="text-center mb-16 reveal">
+                <h2 class="section-title mb-6">Let's <span>Connect</span></h2>
+                <p class="text-[var(--text-muted)] max-w-2xl mx-auto leading-relaxed text-lg">
+                    Whether you have a project in mind, a collaboration opportunity, or simply want to say hello — my inbox is always open. I typically respond within 24 hours.
+                </p>
+                <div class="mt-6 inline-flex items-center gap-2 px-5 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-medium">
+                    <span class="availability-dot"></span>
+                    Available for Internships & Freelance Projects
+                </div>
+            </div>
+
+            <!-- Two-column layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+                <!-- LEFT: Info + Contact Cards -->
+                <div class="space-y-8 reveal">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[var(--text-main)] mb-3">Get In Touch</h3>
+                        <p class="text-[var(--text-muted)] leading-relaxed">
+                            I'm passionate about Data Science, Full-Stack Development, and building solutions that make an impact. If you're working on something exciting or need a dedicated developer, let's talk!
+                        </p>
+                    </div>
+
+                    <!-- What I can help with -->
+                    <div class="space-y-3">
+                        <h4 class="text-sm font-semibold text-brown-400 uppercase tracking-widest">What I Can Help With</h4>
+                        <div class="grid grid-cols-1 gap-3">
+                            <div class="flex items-center gap-3 text-[var(--text-main)]">
+                                <div class="w-8 h-8 rounded-lg bg-brown-500/15 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-chart-bar text-brown-400 text-xs"></i>
+                                </div>
+                                <span class="text-sm">Data Analysis & Visualization Dashboards</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-[var(--text-main)]">
+                                <div class="w-8 h-8 rounded-lg bg-brown-500/15 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-layer-group text-brown-400 text-xs"></i>
+                                </div>
+                                <span class="text-sm">Full-Stack Web Applications (MERN Stack)</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-[var(--text-main)]">
+                                <div class="w-8 h-8 rounded-lg bg-brown-500/15 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-brain text-brown-400 text-xs"></i>
+                                </div>
+                                <span class="text-sm">Machine Learning Model Development</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-[var(--text-main)]">
+                                <div class="w-8 h-8 rounded-lg bg-brown-500/15 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-handshake text-brown-400 text-xs"></i>
+                                </div>
+                                <span class="text-sm">Open Source Collaboration & Team Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Cards -->
+                    <div class="space-y-4">
+                        <h4 class="text-sm font-semibold text-brown-400 uppercase tracking-widest">Direct Links</h4>
+                        <a href="mailto:shrutikumari83404@gmail.com" class="card reveal flex items-center gap-4 p-5" style="text-decoration: none;">
+                            <div class="w-11 h-11 rounded-xl bg-[var(--primary-glow)] flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-[var(--primary)] text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-[var(--text-main)] text-sm mb-0.5">Email</h3>
+                                <p class="text-[var(--text-muted)] text-xs">shrutikumari83404@gmail.com</p>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[var(--text-muted)] text-xs ml-auto"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shruti-kumari-6213bb299/" target="_blank" class="card reveal flex items-center gap-4 p-5" style="text-decoration: none;">
+                            <div class="w-11 h-11 rounded-xl bg-blue-500/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-brands fa-linkedin text-blue-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-[var(--text-main)] text-sm mb-0.5">LinkedIn</h3>
+                                <p class="text-[var(--text-muted)] text-xs">Connect with me professionally</p>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[var(--text-muted)] text-xs ml-auto"></i>
+                        </a>
+                        <a href="https://github.com/019shrutii" target="_blank" class="card reveal flex items-center gap-4 p-5" style="text-decoration: none;">
+                            <div class="w-11 h-11 rounded-xl bg-[var(--tag-bg)] flex items-center justify-center flex-shrink-0">
+                                <i class="fa-brands fa-github text-[var(--text-main)] text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-[var(--text-main)] text-sm mb-0.5">GitHub</h3>
+                                <p class="text-[var(--text-muted)] text-xs">Explore my open-source repositories</p>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[var(--text-muted)] text-xs ml-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Contact Form -->
+                <div class="card p-8 reveal">
+                    <h3 class="text-2xl font-bold text-[var(--text-main)] mb-2">Send a Message</h3>
+                    <p class="text-[var(--text-muted)] text-sm mb-8">Fill in the form and I'll get back to you as soon as possible.</p>
+
+                    <form id="contactForm" action="https://formsubmit.co/shrutikumari83404@gmail.com" method="POST" class="space-y-5">
+                        <!-- Formsubmit config -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New message from your Portfolio!">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="form-label">Your Name</label>
+                                <input type="text" name="name" class="form-input" placeholder="Shruti Kumari" required>
+                            </div>
+                            <div>
+                                <label class="form-label">Your Email</label>
+                                <input type="email" name="email" class="form-input" placeholder="you@email.com" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Subject</label>
+                            <input type="text" name="subject" class="form-input" placeholder="Project Collaboration / Internship / Hello!" required>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Message</label>
+                            <textarea name="message" rows="5" class="form-input" style="resize: vertical; min-height: 130px;" placeholder="Tell me about your project or opportunity..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> Send Message
+                        </button>
+
+                        <div id="formSuccess">
+                            <i class="fa-solid fa-circle-check mr-2"></i>
+                            Message sent successfully! I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Shruti | Portfolio. Designed for the Future.</p>
+    </footer>
+
+    <!-- FEATURES SCRIPTS -->
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../main.js"></script>
+</body>
+
+</html>

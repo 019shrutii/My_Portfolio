@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shruti | Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: { 400: '#a67b5b', 500: '#8B4513', 600: '#6f4e37' },
+                        beige: { 100: '#fdfcf0', 200: '#f5f5dc', 300: '#e8e4c9' },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Shruti <span>Kumari</span></a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificates.html">Certifications</a>
+            <a href="extra-curricular.html">Activities</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <button id="themeToggle" class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SKILLS -->
+    <section id="skills" class="pb-20 pt-32">
+        <h2 class="section-title reveal text-center mb-16">Skills & <span>Expertise</span></h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Languages -->
+            <div class="card reveal p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fa-solid fa-code text-3xl text-brown-400"></i>
+                    <h3 class="text-xl font-bold text-[var(--text-main)]">Languages</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-[var(--text-main)]">C</span>
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-[var(--text-main)]">C++</span>
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-[var(--text-main)]">Python</span>
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-[var(--text-main)]">Java</span>
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-[var(--text-main)]">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Backend & Data -->
+            <div class="card reveal p-8 lg:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fa-solid fa-server text-3xl text-brown-500"></i>
+                    <h3 class="text-xl font-bold text-[var(--text-main)]">Backend & Data Analytics</h3>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                    <span class="px-3 py-2 rounded-lg bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-center text-[var(--text-main)]">Node.js</span>
+                    <span class="px-3 py-2 rounded-lg bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-center text-[var(--text-main)]">Express</span>
+                    <span class="px-3 py-2 rounded-lg bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-center text-[var(--text-main)]">MongoDB</span>
+                    <span class="px-3 py-2 rounded-lg bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-center text-[var(--text-main)]">Python</span>
+                    <span class="px-3 py-2 rounded-lg bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-center text-[var(--text-main)]">Pandas</span>
+                    <span class="px-3 py-2 rounded-lg bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-center text-[var(--text-main)]">NumPy</span>
+                    <span class="px-3 py-2 rounded-lg bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-center text-[var(--text-main)]">Scikit-learn</span>
+                    <span class="px-3 py-2 rounded-lg bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-center text-[var(--text-main)]">SQL</span>
+                </div>
+            </div>
+
+            <!-- Developer Tools -->
+            <div class="card reveal p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fa-solid fa-screwdriver-wrench text-3xl text-brown-600"></i>
+                    <h3 class="text-xl font-bold text-[var(--text-main)]">Dev Tools</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-[var(--text-main)]">VS Code</span>
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-[var(--text-main)]">Git</span>
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--primary-glow)] text-xs font-mono text-[var(--text-main)]">GitHub</span>
+                </div>
+            </div>
+
+            <!-- Core Competencies -->
+            <div class="card reveal p-8 md:col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fa-solid fa-brain text-3xl text-beige-400"></i>
+                    <h3 class="text-xl font-bold text-[var(--text-main)]">Core</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--glass-border)] text-xs font-mono text-[var(--text-main)]">DSA</span>
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--glass-border)] text-xs font-mono text-[var(--text-main)]">OOP</span>
+                    <span class="px-3 py-1 rounded-full bg-[var(--tag-bg)] border border-[var(--glass-border)] text-xs font-mono text-[var(--text-main)]">DBMS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Shruti | Portfolio. Designed for the Future.</p>
+    </footer>
+
+    <!-- FEATURES SCRIPTS -->
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../main.js"></script>
+</body>
+
+</html>

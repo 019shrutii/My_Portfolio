@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shruti | About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: { 400: '#a67b5b', 500: '#8B4513', 600: '#6f4e37' },
+                        beige: { 100: '#fdfcf0', 200: '#f5f5dc', 300: '#e8e4c9' },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Shruti <span>Kumari</span></a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificates.html">Certifications</a>
+            <a href="extra-curricular.html">Activities</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <button id="themeToggle" class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="pb-20 pt-32 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="section-title reveal mb-16">About <span>Me</span></h2>
+            <div class="reveal space-y-12 max-w-3xl mx-auto text-center">
+                <p class="text-lg text-[var(--text-main)] leading-relaxed">
+                    Hello! I'm <strong>Shruti</strong>, a passionate Computer Science student dedicated to the intersection of data and technology. With a strong foundation in both <strong>Data Science</strong> and <strong>Full-Stack Web Development</strong>, I possess a unique ability to not only extract meaningful insights from complex datasets but also structure elegant, user-centric web applications to showcase those insights.
+                </p>
+                <p class="text-lg text-[var(--text-main)] leading-relaxed">
+                    My journey in tech has empowered me to master a versatile tech stack, ranging from predictive Machine Learning models constructed in Python, to dynamic, high-performance dashboards built with Power BI and React. I thrive in environments that challenge my problem-solving abilities, whether it's optimizing core Data Structures and Algorithms (DSA) or designing secure MERN-stack architectures.
+                </p>
+                <p class="text-lg text-[var(--text-main)] leading-relaxed">
+                    Beyond just writing code, I am deeply motivated by the impact technology can create. From conceptualizing projects that track intricate stock trends to developing critical systems like expense trackers and violence reduction dashboards, my ultimate goal is to engineer solutions that are not only innovative but also meaningful to the real world.
+                </p>
+            </div>
+            
+            <div class="about-highlights reveal">
+                <div class="card reveal" style="margin-bottom:20px;">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Education & Journey</h3>
+                    <p>Computer Science Student focusing on modern development architectures and data pipelines.</p>
+                </div>
+                <div class="card reveal" style="margin-bottom:20px;">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h3>Approach</h3>
+                    <p>Clean, maintainable code backed by strong object-oriented principles and DSA fundamentals.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h3>Interests</h3>
+                    <p>Machine Learning, Interactive Dashboards, Full-Stack Architecture, and seamless UI/UX design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Shruti | Portfolio. Designed for the Future.</p>
+    </footer>
+
+    <!-- FEATURES SCRIPTS -->
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../main.js"></script>
+</body>
+
+</html>
