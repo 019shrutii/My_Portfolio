@@ -38,6 +38,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // 2.5. Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+    
+    if (menuToggle && navLinksContainer) {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navLinksContainer.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navLinksContainer.classList.contains('active')) {
+                icon.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinksContainer.contains(e.target) && !menuToggle.contains(e.target)) {
+                navLinksContainer.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon) icon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                if (icon) icon.classList.replace('fa-xmark', 'fa-bars');
+            });
+        });
+    }
+
 
     // 3. Shared Scroll to Top Button
     const scrollBtn = document.getElementById('scrollTopBtn');
